@@ -17,23 +17,20 @@ body {
 .logo {
     cursor: pointer;
 }
+
 .menu {
     position: fixed;
     max-width: 1280px;
     width: 100%;
     top: 0;
     height: 100px;
-    /* Задаем высоту элемента, чтобы контент не перекрывался */
     background-color: #050A30;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
     z-index: 100;
-    /* Устанавливаем z-index, чтобы элемент был поверх других */
 }
-
-
 
 .nav {
     display: flex;
@@ -42,6 +39,86 @@ body {
     color: white;
     cursor: pointer;
 }
+
+.krest {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-icon {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+}
+
+.burger-icon:before,
+.burger-icon:after {
+    content: "";
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    border-radius: inherit;
+    position: absolute;
+}
+
+.burger-icon:before {
+    top: -10px;
+}
+
+.burger-icon:after {
+    top: 10px;
+}
+
+.nav-mobile {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    background-color: #050A30;
+    padding: 50px 20px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.nav-mobile h3 {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+@media only screen and (max-width: 1030px) {
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .nav-mobile.active {
+        display: flex;
+    }
+}
+
 
 .slides {
     display: flex;
