@@ -14,18 +14,9 @@ body {
     align-items: center;
 }
 
-/*.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    gap: 50px;
-    position: relative;
-    width: 100%;
-    max-width: 1280px;
-    padding: 30px 30px 80px 30px;
-
-}*/
-
+.logo {
+    cursor: pointer;
+}
 .menu {
     position: fixed;
     max-width: 1280px;
