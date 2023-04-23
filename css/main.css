@@ -183,6 +183,19 @@ body {
     .nav-mobile.active {
         display: flex;
     }
+
+    .check {
+        width: 95%;
+        min-height: 180px;
+    }
+
+    .check-field {
+        width: 90%;
+    }
+
+    .input-container {
+        width: 85%;
+    }
 }
 
 
